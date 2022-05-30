@@ -1,0 +1,44 @@
+<hr />
+<div class="container">
+  <form #frm="ngForm" (ngSubmit)="updateInfo(frm)" class="form-group">
+    <div>
+      <input
+        type="text"
+        class="form-control"
+        name="location"
+        value=""
+        ngModel
+      />
+      <button type="submit" name="button" class="btn btn-info">Add Info</button>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <button type="button" class="btn btn-primary" (click)="getInfo1fromService()">
+    Person 1
+  </button>
+
+  <button type="button" class="btn btn-warning" (click)="getInfo2fromService()">
+    Person 2
+  </button>
+
+  <button type="button" class="btn btn-danger" (click)="getInfo3fromService()">
+    Person 3
+  </button>
+
+  <pre></pre>
+  <ul class="list-group">
+    <li *ngFor="let info of infoReceived1" class="list-group-info">
+      {{ info }}
+    </li>
+    <pre></pre>
+    <li *ngFor="let info of infoReceived2" class="list-group-info">
+      {{ info }}
+    </li>
+    <pre></pre>
+    <li *ngFor="let info of infoReceived3" class="list-group-info">
+      {{ info }}
+    </li>
+  </ul>
+</div>

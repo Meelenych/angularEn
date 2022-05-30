@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ImageComponentComponent } from './image-component/image-component.component';
 import { EmpInfoComponent } from './emp-info/emp-info.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { EinfoComponent } from './einfo/einfo.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormComponentComponent } from './form-component/form-component.componen
     HeaderComponent,
     ImageComponentComponent,
     EmpInfoComponent,
-    FormComponentComponent
+    FormComponentComponent,
+    EinfoComponent
   ],
   imports: [
     BrowserModule,
